@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WJNewFeatureViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_feature" translatesAutoresizingMaskIntoConstraints="NO" id="iEK-10-57I">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds0-rN-VdA">
+                    <rect key="frame" x="200" y="485" width="200" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Vhy-ya-SF9"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="uPz-hc-uM5"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="new_feature_button"/>
+                    <state key="highlighted" backgroundImage="new_feature_button_highlighted"/>
+                    <connections>
+                        <action selector="enterWeibo:" destination="-1" eventType="touchUpInside" id="hAa-ZA-kEP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="iEK-10-57I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ON2-dR-PJb"/>
+                <constraint firstAttribute="bottom" secondItem="iEK-10-57I" secondAttribute="bottom" id="fpx-vs-mmX"/>
+                <constraint firstAttribute="trailing" secondItem="iEK-10-57I" secondAttribute="trailing" id="gkF-2c-0xO"/>
+                <constraint firstAttribute="centerX" secondItem="Ds0-rN-VdA" secondAttribute="centerX" id="nkj-Qt-yh3"/>
+                <constraint firstItem="iEK-10-57I" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oTG-DB-JiM"/>
+                <constraint firstAttribute="bottom" secondItem="Ds0-rN-VdA" secondAttribute="bottom" constant="40" id="xov-19-jGR"/>
+            </constraints>
+            <point key="canvasLocation" x="149" y="115"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="new_feature" width="320" height="568"/>
+        <image name="new_feature_button" width="200" height="75"/>
+        <image name="new_feature_button_highlighted" width="200" height="75"/>
+    </resources>
+</document>

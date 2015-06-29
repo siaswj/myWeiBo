@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WJEmotionPopView">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="91"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoticon_keyboard_magnifier" translatesAutoresizingMaskIntoConstraints="NO" id="xAv-7f-e7o">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="91"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kgA-Of-cYE">
+                    <rect key="frame" x="8" y="8" width="48" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="9HH-UG-zLL"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kgA-Of-cYE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="7sm-M0-9Ix"/>
+                <constraint firstItem="kgA-Of-cYE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="AHj-Zq-0ld"/>
+                <constraint firstAttribute="bottom" secondItem="xAv-7f-e7o" secondAttribute="bottom" id="Hqt-vl-1TL"/>
+                <constraint firstAttribute="trailing" secondItem="kgA-Of-cYE" secondAttribute="trailing" constant="8" id="WbX-RJ-0n7"/>
+                <constraint firstAttribute="trailing" secondItem="xAv-7f-e7o" secondAttribute="trailing" id="cJo-Pf-Ndb"/>
+                <constraint firstItem="xAv-7f-e7o" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jWC-Ag-p47"/>
+                <constraint firstItem="xAv-7f-e7o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kVv-uZ-7UN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconView" destination="kgA-Of-cYE" id="vIy-8B-wQZ"/>
+            </connections>
+            <point key="canvasLocation" x="71" y="42.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="emoticon_keyboard_magnifier" width="64" height="91"/>
+    </resources>
+</document>
